@@ -11,7 +11,7 @@ def catastrofe_detector(lat, lon):
         conn = http.client.HTTPSConnection("ai-weather-by-meteosource.p.rapidapi.com")
 
         headers = {
-            'X-RapidAPI-Key': "75d5b846d1mshd7922ed090763b8p14bd5fjsn44f17d8ba293",
+            'X-RapidAPI-Key': "92be4df953msh2902bee9f779884p1fa4ebjsn28c2a8842961",
             'X-RapidAPI-Host': "ai-weather-by-meteosource.p.rapidapi.com"
         }
 

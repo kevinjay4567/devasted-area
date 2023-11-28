@@ -5,11 +5,9 @@ from django.shortcuts import redirect
 
 # Create your views here.
 def mostrar_info(request):
-    """climas = Clima.objects.all()
-    for clima in climas:
-        clima = actualizar_informacion(clima.lat, clima.lon)
-    return render(request, "info.html", {"climas": climas})"""
     climas = Clima.objects.all()
+    for clima in climas:
+        actualizar_informacion(clima.lat, clima.lon)
     return render(request, "info.html", {"climas": climas})
 
 def index_page(request):
